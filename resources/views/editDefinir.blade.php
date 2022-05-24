@@ -123,7 +123,7 @@
                 <label for="" class="form-label col-12 mt-3"><b>Imagens:</b></label>
                 @foreach ($imagens as $img)
                 <div class="col-lg-3 col-md-4 col-6" id="div-img">
-                    <div class="" id="btn-close"><a href="{{route('adm.excluir.img',['imagem'=>$img])}}" id="href-img"><img src="/storage/imgs-static/fechar.png" alt=""></a></div>
+                    <div class="" id="btn-close"><a href="{{route('adm.excluir.img',['imagem'=>$img])}}" id="href-img"><img src="{{asset('/imgs-statica/fechar.png')}}" alt=""></a></div>
                     <img id="imgs" src="/storage/{{$img->caminho_img}}" class="img-thumbnail col-12">
                 </div>
                 @endforeach

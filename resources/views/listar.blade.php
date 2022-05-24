@@ -112,11 +112,11 @@
                         <div class="row">
                             <div class="col-12" id="div-icon-conf">
                             <a id="href-edit" href="{{Route('adm.exibir',['ocorrencia'=>$oc])}}" class="col-lg-4 col-md-4 col-6 ps-0 pe-0">
-                                <img class="" id="img-edit" src="storage/imgs-static/engrenagem.svg">
+                                <img class="" id="img-edit" src="{{asset('/imgs-statica/engrenagem.svg')}}">
                             </a>
 
                             <div id="div-lixo" class="col-lg-4 col-md-4 col-6 ps-0 pe-0">
-                                <img class="" id="img-lixo" src="storage/imgs-static/lixo.svg" onclick="confirmacao('{{$oc}}')">
+                                <img class="" id="img-lixo" src="{{asset('/imgs-statica/lixo.svg')}}" onclick="confirmacao('{{$oc}}')">
                             </div>
 
                             </div>
